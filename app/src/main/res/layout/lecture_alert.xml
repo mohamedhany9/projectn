@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="155dp"
+    android:alpha="0.85"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/lecture_name"
+        android:text="@string/lectureName"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#00ABFA" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-35dp"
+        android:layout_marginLeft="-35dp"
+        android:layout_toEndOf="@+id/apply"
+        android:layout_toRightOf="@id/apply"
+        android:padding="27dp"
+        android:src="@drawable/start_time" />
+
+    <TextView
+        android:id="@+id/lecture_time"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/lecturetime"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/leture_image"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:padding="27dp"
+        android:src="@drawable/attendance_place" />
+
+    <TextView
+        android:id="@+id/lecture_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lecture_time"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:text="@string/lecture"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@+id/dismissB"
+        android:layout_toStartOf="@+id/dismissB"
+        android:background="@drawable/rounded_button"
+        android:text="@string/accept"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/dismissB"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/apply"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/dismiss"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/home"
+            />
+        <item android:id="@+id/schedule"
+            android:title="@string/schedule"
+            android:icon="@drawable/schedule"
+            />
+        <item android:id="@+id/aboutus"
+            android:title="@string/aboutUs" android:icon="@drawable/aboutus"
+            />
+        <item android:id="@+id/logout"
+            android:title="@string/logout" android:icon="@drawable/logout"
+            />
+        <item android:id="@+id/questionMenu"
+            android:title="Question" android:icon="@drawable/question"
+            />
+
+    </group>
+
+
+
+</menu>

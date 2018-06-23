@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmedel_diasty.mas.QuestionMainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:id="@+id/slideViewPager"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="260dp"
+    android:id="@+id/radiogroup"
+    android:layout_below="@+id/slide_desc">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/bad"
+        android:text="bad"
+        android:textStyle="bold"
+        android:textColor="#00abfa"
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/good"
+        android:text="good"
+        android:textStyle="bold"
+        android:textColor="#00abfa"
+        android:layout_marginTop="10dp"
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/very_good"
+        android:text="very good"
+        android:textStyle="bold"
+        android:textColor="#00abfa"
+        android:layout_marginTop="10dp"
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/excellent"
+        android:text="excellent"
+        android:textStyle="bold"
+        android:textColor="#00abfa"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radiogroup"
+        android:text="Next"
+        android:textColor="#00abfa"
+        android:textSize="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="bold"
+        android:background="@drawable/background_edit_text2"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radiogroup"
+        android:text="Back"
+        android:textColor="#00abfa"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/background_edit_text2"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radiogroup"
+        android:text="Send"
+        android:visibility="invisible"
+        android:textColor="#00abfa"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="bold"
+        android:background="@drawable/background_edit_text2"
+        />
+
+
+</RelativeLayout>

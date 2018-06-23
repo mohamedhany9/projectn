@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="#00FFFFFF"
+    >
+
+    <RelativeLayout
+        android:id="@+id/timecount"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:alpha="0"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imagetime"
+            android:layout_toRightOf="@id/imagetime"
+            android:text="@string/timeleft"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#00ABFA" />
+
+        <ImageView
+            android:id="@+id/imagetime"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/pause_time"
+            android:textColor="#00ABFA" />
+
+        <Button
+            android:id="@+id/resume"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/home_back"
+            android:text="@string/resume"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00ABFA"></View>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainRow"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:alpha="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_std"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/student4" />
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/image_std"
+            android:layout_toRightOf="@+id/image_std"
+            android:text="@string/student"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/student_name"
+            android:layout_alignLeft="@id/image_std"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/home_back"
+            android:text="@string/pause"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/switch_background"
+            android:enabled="true"
+            android:thumb="@drawable/switch_style"
+            android:track="@drawable/track_style" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/switch1"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/switch1"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="@string/active"
+            android:textColor="#0c5272"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00ABFA"></View>
+    </RelativeLayout>
+
+
+</RelativeLayout>
